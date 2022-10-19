@@ -124,7 +124,7 @@
 		<img src="logo.png" alt="Doro browser" style="width: 100%; max-width: 100px" />
 		<h1>甜桃浏览器</h1>
 		<h3>时尚、快速、保护隐私</h3>
-        从 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/tag/0.1-alpha">GitHub Release</a> 下载 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/download/0.1-alpha/doroBrowser-0.1-alpha.apk">亲友预览版 (4.8 MB)</a> 试用.<br/>
+        从 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/tag/0.1-alpha02">GitHub Release</a> 下载 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/download/0.1-alpha02/doroBrowser-0.1-alpha02.apk">亲友预览版 (5.8 MB)</a> 试用.<br/>
 		前往 <a href="https://github.com/chengang/doro.yikuyiku.com/issues/new">GitHub Issues</a> 反馈意见（或直接微信我！）
 		<br /><br /><br />
 
@@ -145,134 +145,121 @@
 						</table>
 					</td>
 				</tr>
-<!-- 
-				<tr class="information">
-					<td colspan="2">
-						<table>
-							<tr>
-								<td>
-									Sparksuite, Inc.<br />
-									12345 Sunny Road<br />
-									Sunnyville, TX 12345
-								</td>
 
-								<td>
-									Acme Corp.<br />
-									John Doe<br />
-									john@example.com
-								</td>
-							</tr>
-						</table>
+				<tr class="heading">
+					<td>时尚</td>
+					<td></td>
+				</tr>
+				<tr class="details">
+					<td>
+						1. 摒弃 32 位 CPU，摒弃 Android 9 及以下版本支持 <br/>
+						2. 采用 <a href="https://developer.android.com/jetpack/compose">Jetpack Compose</a> 框架 <br/>
+						3. 优先考虑性能，选用新技术不考虑对旧设备的兼容 <br/>
+						4. UI 界面遵循 <a href="https://m3.material.io/">Material Design 3</a> 设计语言 <br/>
 					</td>
-				</tr> 
--->
+					<td></td>
+				</tr>
+				
+				<tr class="heading">
+					<td>快速</td>
+					<td></td>
+				</tr>
+				<tr class="details">
+					<td>
+						1. 不同于其它浏览器基于 Javascript 的链接匹配模块，使用 Native 高效算法 <br/>
+						2. Jetpack Compose 带来了 <a href="https://medium.com/okcredit/comparing-jetpack-compose-performance-with-xml-9462a1282c6b">70% 响应速度的提升</a>, UI 响应更及时 <br/>
+						3. 地址栏等大部分交互 UI 移动到屏幕下方，更符合移动设备操作习惯 <br/>
+					</td>
+					<td></td>
+				</tr>
+				
+				<tr class="heading">
+					<td>保护隐私</td>
+					<td></td>
+				</tr>
+				<tr class="details">
+					<td>
+						1. 除 <a href="https://developer.android.com/reference/android/Manifest.permission#INTERNET">android.permission.INTERNET</a> 不申请其它权限 <br/>
+						2. 不生成可追踪 ID，不请求用于追踪的 URL、图片、Javascript <br/>
+						3. 不使用除 Google 官方提供的未经审计的第三方类库 <br/>
+						4. 不往公共文件夹写入任何文件 <br/>
+						5. 所有日志、记录均使用 Per Device 的 RSA 密钥存储，即便是开发者也无法拿到用户数据 <br/>
+						<!-- 6. 云端数据自由下载导出 -->
+					</td>
+					<td></td>
+				</tr>
+				
+				<tr class="heading">
+					<td>功能</td>
+					<td>版本</td>
+				</tr>
+				
+				<tr class="item">
+					<td>基于倒排索引的 Native 隐私保护算法</td>
+					<td>0.1-alpha01</td>
+				</tr>
+				<tr class="item">
+					<td>支持设置为默认浏览器</td>
+					<td>0.1-alpha01</td>
+				</tr>
+				<tr class="item">
+					<td>支持文件下载</td>
+					<td>0.1-alpha01</td>
+				</tr>
+				<tr class="item">
+					<td>适配 Android 10 暗色模式，切换模式 Activity 不重启</td>
+					<td>0.1-alpha01</td>
+				</tr>
+				<tr class="item">
+					<td>支持网址分享</td>
+					<td>0.1-alpha01</td>
+				</tr>
+				<tr class="item">
+					<td>重构 Compose 官方的 WebView 和 TextField 控件</td>
+					<td>0.1-alpha01</td>
+				</tr>
+				<tr class="item">
+					<td>响应系统的「网页搜索」请求</td>
+					<td>0.1-alpha01</td>
+				</tr>
 
-<tr class="heading">
-	<td>时尚</td>
-	<td></td>
-</tr>
-<tr class="details">
-	<td>
-		1. 摒弃 32 位 CPU，摒弃 Android 9 及以下版本支持<br/>
-		2. 主架构使用谷歌重构的 <a href="https://developer.android.com/jetpack/compose">Jetpack Compose</a> 架构<br/>
-		3. 各子模块优先考虑性能，选用新技术不考虑对旧设备的兼容<br/>
-		4. UI 界面遵循 <a href="https://m3.material.io/">Material Design 3</a> 设计语言开发<br/>
-	</td>
-	<td></td>
-</tr>
-
-<tr class="heading">
-	<td>快速</td>
-	<td></td>
-</tr>
-<tr class="details">
-	<td>
-		1. 不同于其它浏览器 Javascript 插件式的链接匹配模块，使用内置于浏览器的 Native 高效率算法 <br/>
-		2. Jetpack Compose 带来了 <a href="https://medium.com/okcredit/comparing-jetpack-compose-performance-with-xml-9462a1282c6b">70% 响应速度的提升</a>, UI 响应更及时 <br/>
-		3. 地址栏等大部分交互 UI 移动到屏幕下方，更符合移动设备操作习惯 <br/>
-	</td>
-	<td></td>
-</tr>
-
-<tr class="heading">
-	<td>保护隐私</td>
-	<td></td>
-</tr>
-<tr class="details">
-	<td>
-		1. 除 <a href="https://developer.android.com/reference/android/Manifest.permission#INTERNET">android.permission.INTERNET</a> 不申请其它权限 <br/>
-		2. 不请求用于追踪的 URL、图片、Javascript <br/>
-		3. 所有日志、记录均使用 Per Device 的 RSA 密钥存储，即便是开发者也无法拿到用户数据 <br/>
-		4. 不使用除 Google 官方提供的未经审计的第三方类库
-		<!-- 4. 云端数据自由下载导出 -->
-	</td>
-	<td></td>
-</tr>
-
-<tr class="heading">
-	<td>功能</td>
-	<td>版本</td>
-</tr>
-
-<tr class="item">
-	<td>基于倒排索引算法的 Native 隐私保护</td>
-	<td>0.1-alpha</td>
-</tr>
-<tr class="item">
-	<td>支持设置为系统默认浏览器</td>
-	<td>0.1-alpha</td>
-</tr>
-<tr class="item">
-	<td>支持文件下载</td>
-	<td>0.1-alpha</td>
-</tr>
-<tr class="item">
-	<td>适配 Android 10 暗色模式，Activity 不重启</td>
-	<td>0.1-alpha</td>
-</tr>
-<tr class="item">
-	<td>支持网址分享</td>
-	<td>0.1-alpha</td>
-</tr>
-<tr class="item">
-	<td>重构 Compose 官方的 WebView 和 TextField 控件</td>
-	<td>0.1-alpha</td>
-</tr>
-<tr class="item">
-	<td>支持响应系统的「网页搜索」请求</td>
-	<td>0.1-alpha</td>
-</tr>
-
-<tr class="item2" >
-	<td>页面翻译</td>
-	<td>开发中</td>
-</tr>
-<tr class="item2">
-	<td>书签</td>
-	<td>开发中</td>
-</tr>
-<tr class="item2">
-	<td>历史记录</td>
-	<td>开发中</td>
-</tr>
-<tr class="item2">
-	<td>同步到 macOS </td>
-	<td>开发中</td>
-</tr>
-
+				<tr class="item2">
+					<td>历史记录</td>
+					<td>0.1-alpha02</td>
+				</tr>
+				<tr class="item2">
+					<td>书签</td>
+					<td>0.1-alpha02</td>
+				</tr>
+				
+				<tr class="item2" >
+					<td>阅读模式</td>
+					<td>开发中</td>
+				</tr>
+				<tr class="item2" >
+					<td>朗读模式</td>
+					<td>开发中</td>
+				</tr>
+				<tr class="item2" >
+					<td>页面翻译</td>
+					<td>开发中</td>
+				</tr>
+				<tr class="item2">
+					<td>同步到 macOS </td>
+					<td>开发中</td>
+				</tr>
 
 				<tr class="item last">
 					<td></td>
-
 					<td>此致</td>
 				</tr>
 
 				<tr class="total">
 					<td></td>
-
-					<td>8th Oct 2022</td>
+					<td>20th Oct 2022</td>
 				</tr>
 			</table>
 		</div>
 	</body>
+
 </html>
