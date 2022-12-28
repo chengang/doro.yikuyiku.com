@@ -123,9 +123,8 @@
 	<body>
 		<img src="logo.png" alt="Doro browser" style="width: 100%; max-width: 100px" />
 		<h1>甜桃浏览器</h1>
-		<h3>时尚、快速、保护隐私</h3>
-        从 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/">GitHub Release</a> 下载 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/download/0.1-beta03/doroBrowser-0.1-beta03.apk">预览版 (6.8 MB)</a> 试用.<br/>
-		前往 <a href="https://github.com/chengang/doro.yikuyiku.com/issues/new">GitHub Issues</a> 反馈意见（或直接微信我！）
+		<h3>干净且现代</h3>
+        下载 <a href="https://github.com/chengang/doro.yikuyiku.com/releases/download/1.0/doroBrowser-1.0.apk">安卓版 (6.3 MB)</a> 试用.<br/>
 		<br /><br /><br />
 
 		<div class="invoice-box">
@@ -138,8 +137,8 @@
 								</td>
 
 								<td>
-									0.1-beta03<br />
-									December 18, 2022<br />
+									1.0<br />
+									December 28, 2022<br />
 								</td>
 							</tr>
 						</table>
@@ -147,44 +146,30 @@
 				</tr>
 
 				<tr class="heading">
-					<td>时尚</td>
+					<td>干净</td>
 					<td></td>
 				</tr>
 				<tr class="details">
 					<td colspan=2>
-						1. 摒弃 32 位 CPU，摒弃 Android 10 及以下版本支持 <br/>
-						2. 采用 <a href="https://developer.android.com/jetpack/compose">Jetpack Compose</a> 框架 <br/>
-						3. 用户界面遵循 <a href="https://m3.material.io/">Material Design 3</a> 设计语言 <br/>
-						4. 优先考虑性能，选用新技术不考虑对旧设备的兼容 <br/>
+						1. 只申请「联网」这一个系统权限 <br/>
+						2. 除非用户下载文件，不往公共文件夹写入任何文件。卸载不留痕。 <br/>
+						3. 除必须的页面请求之外，不多余发出一个网络请求。不统计用户用量，不上传任何信息。 <br/>
 					</td>
 				</tr>
 				
 				<tr class="heading">
-					<td>快速</td>
+					<td>现代</td>
 					<td></td>
 				</tr>
 				<tr class="details">
 					<td colspan=2>
-						1. Jetpack Compose 带来了 <a href="https://medium.com/okcredit/comparing-jetpack-compose-performance-with-xml-9462a1282c6b">70% 响应速度的提升</a>, UI 响应更及时 <br/>
-						2. 不同于其它浏览器基于 Javascript 的链接匹配模块，使用 Native 高效算法 <br/>
-						3. 地址栏等大部分交互 UI 移动到屏幕下方，更符合移动设备操作习惯 <br/>
+						1. 基于Chrome 内核。使用 Native 模块加速耗时过程。 <br/>
+						2. 用户界面由 Jetpack Compose 驱动 <br/>
+						3. 遵循 Material Design 设计原则 <br/>
 					</td>
 				</tr>
 				
-				<tr class="heading">
-					<td>保护隐私</td>
-					<td></td>
-				</tr>
-				<tr class="details">
-					<td colspan=2>
-						1. 除 <a href="https://developer.android.com/reference/android/Manifest.permission#INTERNET">android.permission.INTERNET</a> 不申请其它权限 <br/>
-						2. 不生成可追踪 ID，不请求用于追踪的 URL、图片、Javascript <br/>
-						3. 除非用户主动下载，不往公共文件夹写入任何文件 <br/>
-						<!-- 6. 云端数据自由下载导出 -->
-					</td>
-				</tr>
-				
-				<tr class="heading">
+				<!-- <tr class="heading">
 					<td>功能</td>
 					<td>版本</td>
 				</tr>
@@ -192,77 +177,7 @@
 				<tr class="item">
 					<td>基于倒排索引的 Native 隐私保护算法</td>
 					<td>0.1-alpha01</td>
-				</tr>
-				<tr class="item">
-					<td>支持设置为默认浏览器</td>
-					<td>0.1-alpha01</td>
-				</tr>
-				<tr class="item">
-					<td>支持文件下载</td>
-					<td>0.1-alpha01</td>
-				</tr>
-				<tr class="item">
-					<td>适配 Android 10 暗色模式，切换模式 Activity 不重启</td>
-					<td>0.1-alpha01</td>
-				</tr>
-				<tr class="item">
-					<td>支持网址分享</td>
-					<td>0.1-alpha01</td>
-				</tr>
-				<tr class="item">
-					<td>响应系统的「网页搜索」请求</td>
-					<td>0.1-alpha01</td>
-				</tr>
-
-				<tr class="item">
-					<td>历史记录</td>
-					<td>0.1-alpha02</td>
-				</tr>
-				<tr class="item">
-					<td>书签</td>
-					<td>0.1-alpha02</td>
-				</tr>
-				<tr class="item">
-					<td>截长图</td>
-					<td>0.1-alpha03</td>
-				</tr>
-				<tr class="item">
-					<td>沉浸式系统状态栏</td>
-					<td>0.1-alpha03</td>
-				</tr>
-				<tr class="item">
-					<td>页面内查找</td>
-					<td>0.1-alpha04</td>
-				</tr>
-				<tr class="item">
-					<td>支持视频全屏</td>
-					<td>0.1-alpha04</td>
-				</tr>
-				<tr class="item">
-					<td>偏好设置</td>
-					<td>0.1-alpha05</td>
-				</tr>
-				<tr class="item">
-					<td>多标签页</td>
-					<td>0.1-beta01</td>
-				</tr>
-				<tr class="item">
-					<td>记住密码</td>
-					<td>0.1-beta02</td>
-				</tr>
-				<tr class="item">
-					<td>优化性能</td>
-					<td>0.1-beta03</td>
-				</tr>
-				
-				<tr class="item2" >
-					<td>阅读模式</td>
-					<td>开发中</td>
-				</tr>
-				<tr class="item2">
-					<td>同步到 macOS </td>
-					<td>开发中</td>
-				</tr>
+				</tr> -->
 
 				<tr class="item last">
 					<td></td>
